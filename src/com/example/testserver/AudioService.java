@@ -44,7 +44,7 @@ public class AudioService extends Service {
 	@Override
 	public int onStartCommand(Intent intent, int flags, int startId) {
 		// TODO Auto-generated method stub
-		//获取ip地址并且执行线程
+		//获取ip地址并且执行线程 哒哒哒
 		ip = intent.getStringExtra("ip");
 		if (!TextUtils.isEmpty(ip)) {
 			myThread=new Thread(new Server());
